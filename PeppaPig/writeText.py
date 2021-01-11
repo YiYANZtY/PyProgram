@@ -57,8 +57,7 @@ def setting():  # 参数设置
     speed(1)
 
 
-if __name__ == '__main__':
-    target_words = '无用之用是为大用'
+def writeWords(target_words):
     params = (
         ('font', gen_url_encode_words(target_words)),
         ('shi_fou_zi_dong', '0'),
@@ -104,4 +103,3 @@ if __name__ == '__main__':
         if right_shift % 4 == 0:
             down_shift += 1
             right_shift = 0
-    done()

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from turtle import *
-
+import writeText
 
 def nose(x, y):  # 鼻子
     penup()  # 提起笔
@@ -269,7 +269,7 @@ def tail(x, y):  # 尾巴
 
 def setting():  # 参数设置
     pensize(4)
-    # hideturtle()  # 使乌龟无形（隐藏）
+    hideturtle()  # 使乌龟无形（隐藏）
     colormode(255)  # 将其设置为1.0或255.随后 颜色三元组的r，g，b值必须在0 .. cmode范围内
     color((255, 155, 192), "pink")
     setup(840, 500, 0, 0)
@@ -279,15 +279,16 @@ def setting():  # 参数设置
 def main():
     setting()  # 画布、画笔设置
     nose(-100, 100)  # 鼻子
-    head(-69, 167)  # 头
-    ears(0, 160)  # 耳朵
-    eyes(0, 140)  # 眼睛
-    cheek(80, 10)  # 腮
-    mouth(-20, 30)  # 嘴
-    body(-32, -8)  # 身体
-    hands(-56, -45)  # 手
-    foot(2, -177)  # 脚
-    tail(148, -155)  # 尾巴
+    # head(-69, 167)  # 头
+    # ears(0, 160)  # 耳朵
+    # eyes(0, 140)  # 眼睛
+    # cheek(80, 10)  # 腮
+    # mouth(-20, 30)  # 嘴
+    # body(-32, -8)  # 身体
+    # hands(-56, -45)  # 手
+    # foot(2, -177)  # 脚
+    # tail(148, -155)  # 尾巴
+    writeText.writeWords(target_words = '无用之用是为大用')
     done()
 
 
